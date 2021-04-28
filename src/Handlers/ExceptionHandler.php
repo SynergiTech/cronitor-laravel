@@ -23,6 +23,19 @@ class ExceptionHandler implements ExceptionHandlerInterface
             return;
         }
 
+        // ExceptionHandler::report(\Exception $e)
+        if ($e instanceof \Throwable && !$e instanceof \Exception) {
+            // @codeCoverageIgnoreStart
+            $e = new \ErrorException(
+                $e->getMessage(),
+                $e->getCode(),
+                E_ERROR,
+                $e->getFile(),
+                $e->getLine()
+            );
+            // @codeCoverageIgnoreEnd
+        }
+
         $this->handler->report($e);
     }
 }
