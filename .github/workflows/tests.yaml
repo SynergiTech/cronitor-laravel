@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run tests on PHP: ${{ matrix.php }}, Illuminate: ${{ matrix.illuminate }}
+      - name: "Run tests on PHP: ${{ matrix.php }}, Illuminate: ${{ matrix.illuminate }}"
         run: docker build . --build-arg PHP_VERSION=${{ matrix.php }} --build-arg ILLUMINATE_VERSION=${{ matrix.illuminate }}
