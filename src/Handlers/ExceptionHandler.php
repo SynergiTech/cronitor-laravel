@@ -24,7 +24,7 @@ class ExceptionHandler implements ExceptionHandlerInterface
         }
 
         // ExceptionHandler::report(\Exception $e)
-        if ($e instanceof \Throwable && !$e instanceof \Exception) {
+        if (! $e instanceof \Exception) {
             // @codeCoverageIgnoreStart
             $e = new \ErrorException(
                 $e->getMessage(),
