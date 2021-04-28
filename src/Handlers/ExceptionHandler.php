@@ -7,7 +7,10 @@ use SynergiTech\Cronitor\Telemetry\ExceptionHandlerInterface;
 
 class ExceptionHandler implements ExceptionHandlerInterface
 {
-    private ?IlluminateExceptionHandler $handler;
+    /**
+     * @var IlluminateExceptionHandler|null
+     */
+    private $handler;
 
     public function __construct(?IlluminateExceptionHandler $handler = null)
     {

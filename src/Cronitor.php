@@ -7,9 +7,15 @@ use SynergiTech\Cronitor\Client;
 
 class Cronitor
 {
-    protected Application $app;
+    /**
+     * @var Application
+     */
+    protected $app;
 
-    protected Client $client;
+    /**
+     * @var Client
+     */
+    protected $client;
 
     public function __construct(Application $app, Client $client)
     {
