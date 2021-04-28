@@ -6,6 +6,10 @@
 composer require "synergitech/cronitor-laravel"
 ```
 
+### Version compatibility
+* Laravel 6.x-8.x
+* PHP 7.3-7.4, 8.0
+
 ### Configuration
 ```sh
 php artisan vendor:publish --provider="SynergiTech\Cronitor\Laravel\CronitorServiceProvider"
