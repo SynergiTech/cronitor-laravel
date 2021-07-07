@@ -18,7 +18,7 @@ class CronitorServiceProvider extends BaseServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/config/cronitor.php' => config_path('cronitor.php'),
+                __DIR__ . '/../config/cronitor.php' => config_path('cronitor.php'),
             ], 'config');
         }
 
