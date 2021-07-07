@@ -15,11 +15,11 @@ return [
          * You may not want to submit telemetry events
          * from your dev/staging/CI environment
          */
-        'enabled' => app()->isProduction(),
+        'enabled' => env('APP_ENV', 'production') === 'production',
         /**
          * Whether the client should report exceptions
          * to the ExceptionHandler rather than throwing them
          */
-        'report_exceptions' => app()->isProduction(),
+        'report_exceptions' => env('APP_ENV', 'production') === 'production',
     ],
 ];
