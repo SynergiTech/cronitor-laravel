@@ -7,7 +7,7 @@ return [
      * If you only need to utilise the telemetry
      * API, you can provide just the "Send Events" key
      */
-    'api_key' => '',
+    'api_key' => env('CRONITOR_API_KEY', ''),
 
     'telemetry' => [
         /**
