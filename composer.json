@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "illuminate/support": "^6.0|^7.0|^8.0",
-        "illuminate/contracts": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
         "synergitech/cronitor": "^0.0.1"
     },
     "autoload": {
@@ -32,6 +32,6 @@
         "phpstan/phpstan": "^0.12.84",
         "php-parallel-lint/php-parallel-lint": "^1.3",
         "nunomaduro/larastan": "^0.7.4",
-        "orchestra/testbench": "^4.8|^5.2|^6.0"
+        "orchestra/testbench": "^4.8|^5.2|^6.0|^7.0"
     }
 }
