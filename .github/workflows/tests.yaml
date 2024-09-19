@@ -26,7 +26,7 @@ jobs:
             illuminate: 11
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: "Run tests on PHP: ${{ matrix.php }}, Illuminate: ${{ matrix.illuminate }}"
         run: docker build . --build-arg PHP_VERSION=${{ matrix.php }} --build-arg ILLUMINATE_VERSION=${{ matrix.illuminate }}
